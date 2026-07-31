@@ -80,3 +80,25 @@ Pastikan sudah terinstall:
 git clone YOUR_REPOSITORY_URL
 
 cd ai-chat-with-pdf
+
+
+# Environment Setup
+
+Sebelum menjalankan aplikasi, buat file environment berdasarkan contoh yang tersedia.
+
+## Backend
+
+Buat file:
+backend/.env.docker
+
+Sesuaikan konfigurasi:
+DATABASE_URL=
+REDIS_HOST=
+REDIS_PORT=
+OPENAI_API_KEY=
+OPENAI_BASE_URL=
+
+## Frontend
+
+Buat file:
+frontend/.env.docker
