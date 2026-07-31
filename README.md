@@ -94,11 +94,14 @@ Buat file:
 backend/.env.docker
 
 Sesuaikan konfigurasi:
+
+```bash
 DATABASE_URL=
 REDIS_HOST=
 REDIS_PORT=
 OPENAI_API_KEY=
 OPENAI_BASE_URL=
+```
 
 ## Frontend
 
