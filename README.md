@@ -138,3 +138,21 @@ PostgreSQL → Port 5432
 
 Redis → Port 6379
 ```
+
+## Menghentikan Aplikasi
+
+Untuk menghentikan seluruh container:
+
+```bash
+docker compose down
+```
+
+# Development Notes
+Project ini menggunakan pendekatan containerized application sehingga frontend, backend, database, dan worker dapat dijalankan secara bersamaan menggunakan Docker Compose.
+
+Cukup jalankan:
+```bash
+docker compose up
+```
+
+Untuk menjalankan seluruh sistem
