@@ -81,6 +81,8 @@ git clone YOUR_REPOSITORY_URL
 
 cd ai-chat-with-pdf
 
+```
+
 
 # Environment Setup
 
