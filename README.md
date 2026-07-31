@@ -79,4 +79,4 @@ Pastikan sudah terinstall:
 ```bash
 git clone YOUR_REPOSITORY_URL
 
-cd AI-chat-pdf-belajar-2
+cd ai-chat-with-pdf
