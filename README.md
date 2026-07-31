@@ -48,4 +48,22 @@ The system extracts document content, creates embeddings, stores vector data, an
 - Docker Compose
 
 
-## Architecture
+
+
+## Running the Project
+
+
+### Requirements
+
+Make sure you have installed:
+
+- Docker Desktop
+- Docker Compose
+
+
+### Clone Repository
+
+```bash
+git clone YOUR_REPOSITORY_URL
+
+cd AI-chat-pdf-belajar-2
