@@ -107,3 +107,34 @@ OPENAI_BASE_URL=
 
 Buat file:
 frontend/.env.docker
+
+Isi:
+```bash
+VITE_API_URL=http://localhost:3000
+```
+
+Buat juga file:
+frontend/.env.docker
+
+Isi:
+```bash
+VITE_API_URL=http://backend:3000
+```
+
+## Menjalankan Aplikasi
+
+Jalankan seluruh service menggunakan Docker Compose:
+```bash
+docker compose up --build
+```
+
+Service yang berjalan:
+```bash
+Frontend  → http://localhost
+
+Backend   → http://localhost:3000
+
+PostgreSQL → Port 5432
+
+Redis → Port 6379
+```
