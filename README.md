@@ -1,26 +1,30 @@
 # AI Chat With PDF
 
-AI Chat With PDF is a RAG-based application that allows users to upload PDF documents and interact with them through AI-powered conversations.
+AI Chat With PDF adalah aplikasi berbasis **RAG (Retrieval Augmented Generation)** yang memungkinkan pengguna melakukan percakapan dengan dokumen PDF menggunakan bantuan Artificial Intelligence.
 
-The system extracts document content, creates embeddings, stores vector data, and retrieves relevant information to answer user questions based on the uploaded documents.
+Pengguna dapat mengunggah dokumen PDF, kemudian sistem akan melakukan ekstraksi teks, memecah dokumen menjadi beberapa bagian (chunking), membuat embedding, menyimpan data vector, dan mengambil informasi yang relevan untuk menjawab pertanyaan berdasarkan isi dokumen.
+
+Project ini dibuat dengan arsitektur fullstack yang sudah menggunakan **Docker Compose**, sehingga seluruh service dapat dijalankan hanya dengan satu perintah.
 
 
 ## Features
 
-- Upload PDF documents
-- Extract text from PDF files
-- Text chunking
-- Generate document embeddings
-- Vector similarity search using pgvector
-- Chat with PDF documents
-- Conversation history
-- Background embedding processing using worker queue
-- Dockerized fullstack application
+- Upload dokumen PDF
+- Ekstraksi teks dari dokumen PDF
+- Text chunking untuk membagi dokumen menjadi bagian kecil
+- Generate embedding menggunakan AI model
+- Penyimpanan vector menggunakan PostgreSQL + pgvector
+- Vector similarity search untuk mencari informasi relevan
+- Chat dengan dokumen PDF
+- Riwayat conversation
+- Background processing menggunakan worker queue
+- Progress processing dokumen
+- Fullstack application berbasis Docker
 
 
 ## Tech Stack
 
-### Frontend
+## Frontend
 
 - Vue 3
 - TypeScript
@@ -30,15 +34,24 @@ The system extracts document content, creates embeddings, stores vector data, an
 - Axios
 
 
-### Backend
+## Backend
 
 - Node.js
 - Express.js
 - Prisma ORM
 - REST API
+- JWT Authentication
 
 
-### Database & Infrastructure
+## AI & Processing
+
+- Retrieval Augmented Generation (RAG)
+- Text Embedding
+- Vector Similarity Search
+- Background Worker Processing
+
+
+## Database & Infrastructure
 
 - PostgreSQL
 - pgvector
@@ -49,19 +62,19 @@ The system extracts document content, creates embeddings, stores vector data, an
 
 
 
+# Running the Project
 
-## Running the Project
 
+## Requirements
 
-### Requirements
-
-Make sure you have installed:
+Pastikan sudah terinstall:
 
 - Docker Desktop
 - Docker Compose
+- Git
 
 
-### Clone Repository
+## Clone Repository
 
 ```bash
 git clone YOUR_REPOSITORY_URL
