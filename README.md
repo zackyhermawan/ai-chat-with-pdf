@@ -106,7 +106,7 @@ OPENAI_BASE_URL=
 ## Frontend
 
 Buat file:
-frontend/.env.docker
+frontend/.env.production
 
 Isi:
 ```bash
