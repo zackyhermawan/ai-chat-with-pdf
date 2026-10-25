@@ -1,5 +1,4 @@
 services:
-  
   postgres:
     image: pgvector/pgvector:pg17
     container_name: ai-chat-pdf-belajar-2
@@ -75,7 +74,7 @@ services:
     restart: always
 
     ports:
-      - "80:80"
+      - "8080:80"
 
     depends_on:
       - backend

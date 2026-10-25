@@ -18,7 +18,12 @@ import authRoute from "./routes/auth.route.js"
 
 const app = express()
 
-app.use(cors())
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
+}));
+
 app.use(express.json())
 
 // TEST
